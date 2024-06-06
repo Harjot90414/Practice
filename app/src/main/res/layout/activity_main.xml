@@ -11,50 +11,139 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello"
+        android:text="Write about yourself"
         android:layout_gravity="center"
         android:textSize="30sp"
         android:layout_margin="30dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold|italic"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:text="Enter Your Name"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
         android:textSize="20sp"/>
     <EditText
         android:id="@+id/etName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:hint="Enter your name"
         android:layout_margin="20dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enter Your City"
-        android:textSize="20sp"/>
-    <EditText
-        android:id="@+id/etCity"
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Enter Your Number"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/etNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter your number"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Enter Your DOB"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/etDOB"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter your DOB"
+            android:maxLength="2"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:hint="Enter your city"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enter Your College"
-        android:textSize="20sp"/>
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Are you Studying?"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/rg">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:id="@+id/rbYes"
+                android:textSize="15sp"
+                android:layout_marginEnd="20dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NO"
+                android:id="@+id/rbNo"
+                android:textSize="15sp"
+                android:layout_marginStart="20dp"/>
+        </RadioGroup>
+        </LinearLayout>
     <EditText
         android:id="@+id/etCollege"
-        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your college"/>
+        android:hint="Enter your College name"
+        android:layout_margin="20dp"
+        android:visibility="gone"/>
+
+    <!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Enter Your City"-->
+<!--        android:textSize="20sp"/>-->
+<!--    <EditText-->
+<!--        android:id="@+id/etCity"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:hint="Enter your city"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Enter Your College"-->
+<!--        android:textSize="20sp"/>-->
+<!--    <EditText-->
+<!--        android:id="@+id/etCollege"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Enter your college"/>-->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:text="Check"
-        android:id="@+id/btnCheck"
+        android:text="Move"
+        android:id="@+id/btnMove"
         android:textSize="20sp"/>
 </LinearLayout>
