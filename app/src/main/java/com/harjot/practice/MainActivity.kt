@@ -45,6 +45,9 @@ class MainActivity : AppCompatActivity() {
             else if(binding.etNumber.length()<10){
                 binding.etNumber.error = "Enter Valid Number"
             }
+            else if(binding.etDOB.text.toString().toInt() > 31 || binding.etDOB.text.toString().toInt() == 0){
+                binding.etDOB.error = "Enter Valid Date"
+            }
             else if(binding.rbYes.isChecked==false && binding.rbNo.isChecked==false){
                 Toast.makeText(this, "select yes or no", Toast.LENGTH_SHORT).show()
             }
