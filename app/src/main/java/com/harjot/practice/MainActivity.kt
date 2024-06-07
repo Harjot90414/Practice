@@ -26,11 +26,18 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.rbYes.setOnClickListener {
-            binding.etCollege.visibility = View.VISIBLE
-        }
-        binding.rbNo.setOnClickListener {
-            binding.etCollege.visibility = View.GONE
+//        binding.rbYes.setOnClickListener {
+//            binding.etCollege.visibility = View.VISIBLE
+//        }
+//        binding.rbNo.setOnClickListener {
+//            binding.etCollege.visibility = View.GONE
+//        }
+        binding.rbYes.setOnCheckedChangeListener { ButtonView, isChecked ->
+            if(isChecked){
+                binding.etCollege.visibility = View.VISIBLE
+            }else{
+                binding.etCollege.visibility = View.GONE
+            }
         }
         binding.btnMove.setOnClickListener{
             if(binding.etName.text.toString().trim().isNullOrEmpty()){
