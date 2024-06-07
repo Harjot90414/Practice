@@ -23,23 +23,24 @@ class SecondActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val name = intent.getStringExtra("name")
-        val number = intent.getStringExtra("number")
-        val dob = intent.getStringExtra("dob")
-        val study = intent.getStringExtra("study")
-        val college = intent.getStringExtra("college")
+        intent?.extras?.let {
+            val name = it.getString("name")
+            val number = it.getString("number")
+            val dob = it.getString("dob")
+            val study = it.getString("study")
+            val college = it.getString("college")
 
-        binding.tvName.text = name
-        binding.tvNumber.text = number
-        binding.tvDOB.text = dob
-        binding.tvStudy.text = study
+            binding.tvName.text = name
+            binding.tvNumber.text = number
+            binding.tvDOB.text = dob
+            binding.tvStudy.text = study
 
-        if (college == null){
-            binding.ll.visibility = View.GONE
-        }
-        else {
-            binding.ll.visibility = View.VISIBLE
-            binding.tvCollege.text = college
+            if (college == null) {
+                binding.ll.visibility = View.GONE
+            } else {
+                binding.ll.visibility = View.VISIBLE
+                binding.tvCollege.text = college
+            }
         }
         binding.btnBack.setOnClickListener {
             this.finish()
