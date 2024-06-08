@@ -31,8 +31,10 @@
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:autofillHints="Harjot Singh"
         android:hint="Enter your name"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        android:inputType="text" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,6 +51,7 @@
             android:id="@+id/etNumber"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:autofillHints="6283405923"
             android:hint="Enter your number"
             android:inputType="number"
             android:maxLength="10"
@@ -67,6 +70,7 @@
             android:textSize="20sp"/>
         <EditText
             android:id="@+id/etDOB"
+            android:autofillHints="24"
             android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -112,8 +116,10 @@
         android:id="@+id/etCollege"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints="Daviet"
         android:hint="Enter your College name"
         android:layout_margin="20dp"
+        android:inputType="text"
         android:visibility="gone"/>
 
     <!--    <TextView-->
