@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
             if(isChecked){
                 binding.etCollege.visibility = View.VISIBLE
             }else{
+                binding.etCollege.setText("")
                 binding.etCollege.visibility = View.GONE
             }
         }
@@ -71,6 +72,7 @@ class MainActivity : AppCompatActivity() {
                     intent.putExtra("college",binding.etCollege.text.toString())
                 }
                 if (binding.rbNo.isChecked){
+
                     intent.putExtra("study","Not Studying")
                 }
                 startActivity(intent)
