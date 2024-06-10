@@ -44,7 +44,8 @@ class SecondActivity : AppCompatActivity() {
             }
         }
         binding.btnBack.setOnClickListener {
-            this.finish()
+            var intent = Intent(this,RelativeLayoutActivity::class.java)
+            startActivity(intent)
         }
     }
     override fun onDestroy() {
