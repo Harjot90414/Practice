@@ -47,4 +47,12 @@
         android:text="-"
         android:textSize="30sp"
         android:id="@+id/btnSub"/>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnNext"
+        android:padding="15dp"
+        android:textSize="20sp"/>
 </LinearLayout>

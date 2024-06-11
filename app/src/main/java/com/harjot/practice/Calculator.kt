@@ -1,5 +1,6 @@
 package com.harjot.practice
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -32,6 +33,10 @@ class Calculator : AppCompatActivity() {
         }
         binding.btnDivide.setOnClickListener {
             binding.tvNumber.text="${binding.tvNumber.text.toString().toInt()/2}"
+        }
+        binding.btnNext.setOnClickListener {
+            var intent = Intent(this,RelativeCardView::class.java)
+            startActivity(intent)
         }
     }
 }
