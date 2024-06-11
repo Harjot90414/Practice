@@ -44,7 +44,7 @@ class SecondActivity : AppCompatActivity() {
             }
         }
         binding.btnBack.setOnClickListener {
-            var intent = Intent(this,RelativeLayoutActivity::class.java)
+            var intent = Intent(this,Calculator::class.java)
             startActivity(intent)
         }
     }
