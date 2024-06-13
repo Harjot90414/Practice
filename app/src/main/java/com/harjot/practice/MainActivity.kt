@@ -33,6 +33,14 @@ class MainActivity : AppCompatActivity() {
 //        binding.rbNo.setOnClickListener {
 //            binding.etCollege.visibility = View.GONE
 //        }
+        binding.btnSmsIntent.setOnClickListener {
+            var  intent = Intent(this,IntentSmsActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnIntent.setOnClickListener {
+            var  intent = Intent(this,IntentEmailActivity::class.java)
+            startActivity(intent)
+        }
         binding.rbYes.setOnCheckedChangeListener { ButtonView, isChecked ->
             if(isChecked){
                 binding.etCollege.visibility = View.VISIBLE
