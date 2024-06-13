@@ -1,2 +1,2 @@
-implicit intent# Practice
+# Practice
  
