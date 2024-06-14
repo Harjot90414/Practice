@@ -41,7 +41,6 @@ class IntentEmailActivity : AppCompatActivity() {
                     intent.putExtra("subject",binding.etSubject.text.toString().trim())
                     intent.putExtra("body",binding.etBody.text.toString().trim())
 //                    putExtra(Intent.EXTRA_STREAM,Uri.parse("mailto:${binding.etEmail.text.toString()}"))
-
                 startActivity(intent)
             }
         }

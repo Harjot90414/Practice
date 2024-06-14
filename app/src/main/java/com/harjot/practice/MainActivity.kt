@@ -41,6 +41,10 @@ class MainActivity : AppCompatActivity() {
             var  intent = Intent(this,IntentEmailActivity::class.java)
             startActivity(intent)
         }
+        binding.btnAlertActivity.setOnClickListener {
+            var intent = Intent(this,ALertDialogeActivity::class.java)
+            startActivity(intent)
+        }
         binding.rbYes.setOnCheckedChangeListener { ButtonView, isChecked ->
             if(isChecked){
                 binding.etCollege.visibility = View.VISIBLE

@@ -173,5 +173,13 @@
             android:text="Sms Intent"
             android:id="@+id/btnSmsIntent"
             android:textSize="20sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Go to alert activity"
+            android:id="@+id/btnAlertActivity"
+            android:textSize="20sp"/>
     </LinearLayout>
 </ScrollView>

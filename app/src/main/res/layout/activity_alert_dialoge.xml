@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ALertDialogeActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Number"
+        android:textStyle="bold|italic"
+        android:textSize="40sp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="40dp"
+        android:hint="Enter Number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perform Calculations"
+        android:id="@+id/btnALert"
+        app:cornerRadius="10dp"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:layout_marginTop="100dp"/>
+</LinearLayout>
